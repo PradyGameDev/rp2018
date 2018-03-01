@@ -1,5 +1,5 @@
 .About {
-    margin-top: 80px;
+    margin-top: 00px;
     margin-bottom: 5em;
 
     .jumbotron {
@@ -35,3 +35,38 @@ button{
   border-radius: 10px;
   border-color: #C8212A;
 }
+.flex-container {
+    display:flex;
+    flex-direction: row!important;
+    flex-wrap:nowrap;
+    justify-content:left;
+    margin:0em;
+    padding:2em;
+  }
+  #job-seekers {
+    /* border: 2pt solid red; */
+    background-color: #4286f4;
+    margin:2em;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-variant-caps: titling-caps;
+  }
+  #speakers {
+    margin:2em;
+    background-color: #108e0e;
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-variant-caps: titling-caps;
+  }
+  #photos {
+    /* border: 2pt solid red; */
+    margin:2em;
+    background-color: rgba(252, 76, 45, 1);
+    font-size: 1.5em;
+    font-weight: bolder;
+    font-variant-caps: titling-caps;
+}
+  .container-fluid {
+    padding:1em;
+    background-color: gray;
+  }

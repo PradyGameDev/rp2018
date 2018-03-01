@@ -34,7 +34,7 @@ require('./styles/main.scss');
 class App extends React.Component {
     render () {
         return(
-            <div className="main">Hello World</div>
+            <div className="main"> Hello World </div>
         )
     }
 }

@@ -1,6 +1,8 @@
 'use strict';
 
 const webpack = require('webpack');
+const react = require('react');
+const babel = require('babel-core');
 const path = require('path');
 const autoprefixer = require('autoprefixer');
 const copy = require('copy-webpack-plugin');
@@ -28,7 +30,7 @@ const config = {
                 include : APP_DIR,
                 loader : 'babel-loader',
                 query: {
-                    presets: ['es2015']
+                    presets: ['react']
                 }
             },
             {

@@ -266,7 +266,7 @@ class Speakers extends Component {
                 // console.log(hexStr);
                 return(
                     <Col key={idx} xs={12} sm={6} md={3} style={{"border:": ""}}>
-                        <Thumbnail onClick={(e) => this.handleClick(e, 'js-overlay-' + idx)} className="Speakers__card js-speakercard" src={speaker.img} style={{"border":hexStr}}>
+                        <Thumbnail onClick={(e) => this.handleClick(e, 'js-overlay-' + idx)} className="Speakers__card js-speakercard" src={speaker.img} style={{"background-color":hexStr}}>
                             <h3>{speaker.name}</h3>
                             <div onClick={(e) => this.hideOverlay(e, 'js-overlay-' + idx)} id={'js-overlay-' + idx} className="Speakers__overlay">
                                 <h4>{speaker.name}</h4><br/>
