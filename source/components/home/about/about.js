@@ -14,7 +14,6 @@ class About extends Component {
     render() {
         return (
             <div id="About" className="About container">
-
                 <Jumbotron>
                     <img className="About__header" src="../assets/svg/home_header.svg" />
                     <p className="caps">September 25th - October 1st, 2018</p>
@@ -30,7 +29,7 @@ class About extends Component {
                                 <p>An engaged audience truly passionate about technology trends</p>
                             </section>
                             <section id="speakers">
-                                <h1>890+ first-timers</h1>
+                                <h1>61% first-timers</h1>
                                 <p>
                                     An event rapidly gaining in popularity    
                                 </p>
