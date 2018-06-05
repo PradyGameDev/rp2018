@@ -12,23 +12,23 @@
 
 @media (max-width: 1366px) {
     .bordered {
-        width: 6vh;
-        height: 6vh;
-        font-size: 1vh;
+        width: 7vh;
+        height: 7vh;
+        font-size: 1.2vh;
         padding: 1vh;
     }
 }
 
 @media (max-width: 720px) {
     .bordered {
-        font-size: 1.8vh;
+        font-size: 1.3vh;
         padding: 1.3vh;
     }
 }
 
 @media (max-width: 480px) {
     .bordered {
-        font-size: 1vh;
+        font-size: 1.5vh;
         padding: 0.7vh;
     }
 }

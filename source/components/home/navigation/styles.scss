@@ -5,7 +5,7 @@
     position: sticky;
     top: -1px;
     z-index: 1;
-    margin-bottom: 17vh!important;
+    margin-bottom:calc(7vh + 7vw)!important;
     .container {
         margin-left:0;
         margin-right:0;
@@ -34,7 +34,7 @@
             display:inline-block;
             padding:0;
             margin:0!important;
-            margin-left:calc(48vw - 10vw)!important;
+            margin-left:calc(49.1vw - 10vw)!important;
             margin-right:10vw!important;
             // margin-bottom: 2vh!important;
         }
@@ -56,8 +56,12 @@
             text-decoration: none;
         }
         @media (max-width: 768px) {
-            #rpText {
-                display:none;
+            div > li {
+                display:none!important;
+            }
+            .jumbotron {
+                padding-top:0!important;
+                margin-top:0!important;
             }
         }
     }
@@ -91,7 +95,7 @@
         transform: translateY(-50%) !important;
     }
     button.collapsed {
-        transform: translateY(30%) !important;
+        // transform: translateY(30%) !important;
     }
 }
 
@@ -102,14 +106,15 @@
             color: #ffff;
             font-size: 1em;
         }
+        margin:0!important;
     }
     .Navigation__logo {
         position: relative;
         top: 13px !important;
-        transform: translateY(-25%) !important;
+        // transform: translateY(-25%) !important;
     }
     button.collapsed {
-        transform: translateY(67%) !important;
+        // transform: translateY(67%) !important;
     }
     .Navigation {
         .navbar {
@@ -117,23 +122,24 @@
                 font-size: 1em;
             }
         }
+        margin-bottom:0!important;
     }
 }
 
 @media (max-width: 600px) {
     .Navigation__logo {
-        transform: translateY(-25%) !important;
+        transform: translateY(-4vw) !important;
     }
     button.collapsed {
-        transform: translateY(67%) !important;
+        // transform: translateY(5vw) !important;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .Navigation__logo {
         transform: translateY(-16.67%) !important;
     }
     button.collapsed {
-        transform: translateY(50%) !important;
+        // transform: translateY(50%) !important;
     }
 }

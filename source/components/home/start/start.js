@@ -40,11 +40,13 @@ class Start extends Component {
                             <section className="card-text">September 17th - 22nd, 2018</section>
                             <Countdown className="counter" />
                             <section className="card-text"> Interested in sponsoring or attending? </section>
+                            <section>
                             <a className="btn" href="mailto:conference-chair@acm.illinois.edu">
                                 <button className="contact">
                                     CONTACT US
                                 </button>
                             </a>
+                            </section>
                         </section>
                         <section className="card">
                             <h2 className="card-heading">Featured Speaker</h2>

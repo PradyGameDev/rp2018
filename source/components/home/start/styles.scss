@@ -1,14 +1,16 @@
 .Start {
-    margin-top: 8vh;
+    margin-top: 1vh;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
     font-size: 1em;
     font-weight: bold;
+    object-fit: contain;
     .jumbotron {
         background-color: inherit;
         color: white;
         text-align: center;
         font-family: inherit;
+        padding-top:0!important;
     }
     .caps {
         margin: 25px;
@@ -22,17 +24,18 @@
         }
     }
     section.container-card {
-        width: 100vw;
+        width: 100%;
         padding-left: 5vw;
         padding-right: 5vw;
-        padding-top: 7vh;
+        padding-top: 5vh;
         margin-bottom: 2vh;
     }
     section.card {
-        height: 50vh;
+        height: calc(32vh + 13vw);
         background-color: white;
         padding: 1vw;
         box-shadow: 0 0 40px rgba(0, 0, 0, 0.2), 0 0 40px rgba(0, 0, 0, 0.6);
+        object-fit: contain;
     }
     section.card:not(:first-of-type) {
         margin-left: 2vw;
@@ -41,11 +44,12 @@
         color: black;
         font-weight: bold;
         margin-bottom: 1em;
+        font-size: calc(1.2vw + 1.2vh);
     }
     section.card-text {
         margin: 1vh;
         color: black;
-        font-size: 1.4em;
+        font-size: calc(1vw + 1vh);
         font-weight: bolder;
         display: inline;
     }
@@ -53,25 +57,27 @@
     ol {
         padding-left: 2.5vw;
         padding-right: 2.5vw;
-        text-align: left; // padding-top:1vh;
-        // padding-bottom:1vh;
+        text-align: left; 
     }
     section.card ul,
     section.card ol {
         color: black;
-        font-size: 1.4em;
+        font-size: calc(1vw + 1vh);
         word-wrap: normal;
     }
     section.card .card-featured-speaker {
-        height: 30vh !important;
+        height: calc(10vh + 15vw) !important;
+        object-fit: contain;
     }
     section.card .card-speaker-caption {
         margin: 2vw;
         font-family: sans-serif;
         margin-top: 1.2vh;
+        margin-bottom: 3vh;
         text-align: center; // font-weight: bold;
         color: black;
         font-size: 1.8em;
+        object-fit: contain;
     }
     #countdown {
         font-size: 1.5em;
@@ -116,6 +122,31 @@
             font-size: 2em;
         }
     }
+    @media (max-width: 750px) {
+        section .card-container {
+            display: block !important;
+        }
+        section .card .card-heading {
+            padding-top: 3vh;
+        }
+        section .card-text {
+            font-size: calc(2vw + 2vh)!important;
+        }
+        section .card {
+            height:50vh;
+            margin: 0 !important;
+            margin-bottom: 3vh !important;
+            display: block!important;
+        }
+        section.card ul,
+        ol {
+            padding-left: 10vw;
+            padding-right: 10vw;
+            font-size:calc(2vw + 2vh) !important;
+            text-align: left; // padding-top:1vh;
+            // padding-bottom:1vh;
+        }
+    }
     @media (max-width: 420px) {
         .header {
             max-width: 90%;
@@ -129,25 +160,6 @@
         .intro,
         .caps {
             font-size: 1.2em;
-        }
-        
-        section .card-container {
-            display: block !important;
-        }
-        section .card .card-heading {
-            padding-top: 3vh;
-        }
-        section .card {
-            margin: 0 !important;
-            margin-bottom: 3vh !important;
-            display: block!important;
-        }
-        section.card ul,
-        ol {
-            padding-left: 10vw;
-            padding-right: 10vw;
-            text-align: left; // padding-top:1vh;
-            // padding-bottom:1vh;
         }
     }
     @media (max-width: 320px) {
@@ -217,5 +229,33 @@
 @media (max-width: 420px) {
     .Start {
         margin-bottom: 170vw!important;
+        margin-top:0 !important;
+    }
+    .jumbotron {
+        margin-top:0 !important;
+        padding-top:0 !important;
+    }
+}
+@media (max-height: 750px) and (max-width: 1024) {
+    .Start {
+        margin-bottom: 100vh!important;
+        margin-top:0 !important;
+    }
+    .jumbotron {
+        margin-top:0 !important;
+        padding-top:0 !important;
+    }
+}
+@media (min-width: 750px) and(max-width:1366) {
+    .Start {
+        margin-bottom: 10vh!important;
+        margin-top:0 !important;
+    }
+    .jumbotron {
+        margin-top:0 !important;
+        padding-top:0 !important;
+    }
+    section.card {
+        height: 70vh!important;
     }
 }
