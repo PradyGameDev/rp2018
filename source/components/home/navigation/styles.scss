@@ -20,21 +20,21 @@
         .navbar-collapse collapse {
             margin: 0;
         }
-        .rpLogo {
+        #rpLogo {
             display:inline-block;
             width: 5vw;
             margin: 0!important;
-            margin-left: 47.5vw!important;
+            margin-left: 45.5vw!important;
             margin-bottom: 2vh!important;
             margin-top: 2vh!important;
         }
-        .rpText {
+        #rpText {
             width: 20vw;
             // height: 1.5em;
             display:inline-block;
             padding:0;
             margin:0!important;
-            margin-left:calc(50vw - 10vw)!important;
+            margin-left:calc(48vw - 10vw)!important;
             margin-right:10vw!important;
             // margin-bottom: 2vh!important;
         }
@@ -54,6 +54,11 @@
             color: #c9e88f;
             text-shadow: 5px #c9e88f;
             text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            #rpText {
+                display:none;
+            }
         }
     }
     &__logo {
